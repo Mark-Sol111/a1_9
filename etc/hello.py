@@ -1,5 +1,5 @@
-import multiprocessing
-
 bind = "0.0.0.0:8000"
-workers = multiprocessing.cpu_count() * 2 + 1
-accesslog = "access.log"
+workers = '16'
+working_dir = "/home/box/web"
+wsgi_app = "hello:app"
+timeout = '60'
