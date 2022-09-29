@@ -1,0 +1,12 @@
+CONFIG = {
+    'mode': 'wsgi',
+    # 'working_dir': '/home/box/web',
+    'working_dir': '~/cprj/wtech/lab/1.9.12/a1_9/web',
+    'python': '/usr/bin/python3',
+    'args': (
+        '--bind=0.0.0.0:8000',
+        '--workers=16',
+        '--timeout=60',
+        'hello.app'
+    )
+}
